@@ -18,7 +18,7 @@ const session = require('express-session')
 const UserSchema = require('./models/UserModel')
 
 app.use(cors({
-  origin: ['https://admin.fidelitytrades.org', 'https://fidelity-admin.vercel.app', 'https://fidelity-trades-beige.vercel.app', 'http://localhost:3000', 'http://localhost:5173', 'https://fidelitytrades.org']
+  origin: ['https://gemini-ai-admin.vercel.app', 'https://geminiaitrades.com', 'https://admin.geminiaitrades.com', 'http://localhost:3000', 'http://localhost:5173', 'https://fidelitytrades.org']
 }));
 
 app.use(morgan('dev'))
