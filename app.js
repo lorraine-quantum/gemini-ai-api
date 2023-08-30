@@ -64,7 +64,7 @@ app.use("/upload", uploadRoutes);
 app.use("/auth", auth, modifyUserRoutes);
 app.use("/admin/auth", adminAuth);
 app.get('/', (req, res) => {
-  res.json({ welcome: 'fidelity-trades' })
+  res.json({ welcome: 'gemini-ai' })
 })
 app.use("/", adminAuthMiddleware, adminRoutes);
 
