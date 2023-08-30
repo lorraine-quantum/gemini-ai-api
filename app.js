@@ -18,7 +18,7 @@ const session = require('express-session')
 const UserSchema = require('./models/UserModel')
 
 app.use(cors({
-  origin: ['https://gemini-ai-admin.vercel.app', 'https://geminiaitrades.com', 'https://admin.geminiaitrades.com', 'http://localhost:3000', 'http://localhost:5173', 'https://fidelitytrades.org']
+  origin: ['https://gemini-ai-admin.vercel.app', 'https://geminiaitrades.com', 'https://admin.geminiaitrades.com']
 }));
 
 app.use(morgan('dev'))
@@ -69,7 +69,7 @@ app.get('/', (req, res) => {
 app.use("/", adminAuthMiddleware, adminRoutes);
 
 
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 3005;
 //switch between local and cloud db
 
 const local = process.env.LOCAL_URI;
