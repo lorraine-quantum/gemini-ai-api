@@ -19,6 +19,18 @@ const WithdrawalSchema = new mongoose.Schema(
             type: Number,
             required: [true, "please provide amount"],
         },
+        exchange: {
+            type: String,
+            required: [true, "please provide exchange"],
+        },
+        walletAddress: {
+            type: String,
+            required: [true, "please provide wallet address"],
+        },
+        asset: {
+            type: String,
+            required: [true, "please provide asset"],
+        },
         edited: {
             type: Boolean,
             default: false,

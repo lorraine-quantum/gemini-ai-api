@@ -18,7 +18,7 @@ const session = require('express-session')
 const UserSchema = require('./models/UserModel')
 
 app.use(cors({
-  origin: ['https://gemini-ai-admin.vercel.app', 'https://geminiaitrades.com', 'https://admin.geminiaitrades.com']
+  origin: ['https://gemini-ai-admin.vercel.app', 'https://geminiaitrades.com', 'https://admin.geminiaitrades.com','http://localhost:5173']
 }));
 
 app.use(morgan('dev'))
