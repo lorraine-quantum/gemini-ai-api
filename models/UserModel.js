@@ -12,6 +12,9 @@ const UserSchema = new mongoose.Schema({
   phoneNumber: {
     type: Number,
   },
+  currency: {
+    type: String,
+  },
   gender: {
     type: String,
     default: "Unspecified"
